@@ -2,6 +2,8 @@
 <resources>
 
     <string name="app_name">ScanServiceV1.1.0</string>
+    <string name="tv_instruction">This is the scan service app, Please do not uninstall it!</string>
+
 
     <string name="info_success">Success</string>
     <string name="info_failed">Faild</string>
