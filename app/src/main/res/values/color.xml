@@ -1,0 +1,36 @@
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="half_transp">#90000000</color>
+    <color name="title_pressed">#F5DEB3</color>
+    <color name="light_hui">#EBEBEB</color>
+    <color name="yellow">#EEC900</color>
+    <color name="green">#7CCD7C</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#292929</color>
+    <color name="blue">#0063d2</color>
+    <color name="red">#FF3030</color>
+    <color name="bg_gray">#ffe4e4e4</color>
+    <color name="font_hui">#999999</color>
+    <color name="btntextcolor">#ff1E90FF</color>
+    <color name="ddt_line">#ffcccccc</color>
+    <color name="ddt_line_one">#ffdddddd</color>
+    <color name="listview_backgroud">#fff5f5f5</color>
+    <color name="detail_backgroud">#0063d2</color>
+    <color name="diancai_backgroud">#22ac38</color>
+    <color name="light_green">#009ef2</color>
+    <color name="hui">#f5f5f5</color>
+    <color name="dark_green">#338800</color>
+    <color name="orange">#FF6600</color>
+    <color name="cyan">#33B5E5</color>
+    <color name="purple">#9933FF</color>
+    <color name="light_gray">#DDDDDD</color>
+    <color name="middle_gray">#444444</color>
+    <color name="dark_gray">#222222</color>
+  <!--QR-->
+  <color name="actionbar_opacity">#DD000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_border">#ffafed44</color>
+    <color name="cross_hairs">#ff80d25b</color>
+</resources>

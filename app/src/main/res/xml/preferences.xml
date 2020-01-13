@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Preference
+        android:key="symbologies"
+        android:title="@string/symbologies" />
+
+    <ListPreference
+        android:defaultValue="Back-Facing"
+        android:key="camera_type"
+        android:title="@string/camera_type" />
+    <ListPreference
+        android:defaultValue="Normal"
+        android:key="focus"
+        android:title="@string/focus" />
+    <ListPreference
+        android:defaultValue="640 x 480"
+        android:entries="@array/resolution_entries"
+        android:entryValues="@array/resolution_values"
+        android:key="resolution"
+        android:title="@string/resolution" />
+
+    <!-- There's a bug in SwitchPreference that wasn't fixed until Android 5.0 (api level 21),
+    
+         https://code.google.com/p/android/issues/detail?id=26194
+         
+         So we use CheckBoxPreference instead. 
+    -->
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="illumination"
+        android:title="@string/illumination" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="low_contrast_mode"
+        android:title="@string/low_contrast_mode" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="large_data_display"
+        android:title="@string/large_data_display" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="vibrate_on_scan"
+        android:title="@string/vibrate_on_scan" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="continuous_scan_mode"
+        android:title="@string/continuous_scan_mode" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="debug_mode"
+        android:title="@string/debug_mode" />
+    <ListPreference
+        android:defaultValue="4"
+        android:entries="@array/debug_level_entries"
+        android:entryValues="@array/debug_level_values"
+        android:key="debug_level"
+        android:title="@string/debug_level" />
+    
+</PreferenceScreen>

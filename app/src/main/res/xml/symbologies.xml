@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="symbologies" >
+
+    <Preference
+        android:key="enable_all"
+        android:title="@string/enable_all" />
+    <Preference
+        android:key="disable_all"
+        android:title="@string/disable_all" />
+
+    <!-- There's a bug in SwitchPreference that wasn't fixed until Android 5.0 (api level 21),
+    
+         https://code.google.com/p/android/issues/detail?id=26194
+         
+         So we use CheckBoxPreference instead. 
+    -->
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="aztec"
+        android:title="@string/aztec" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="bc412"
+        android:title="@string/bc412" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="codabar"
+        android:title="@string/codabar" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="codablockf"
+        android:title="@string/codablockf" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="code11"
+        android:title="@string/code11" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="code128"
+        android:title="@string/code128" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="code32"
+        android:title="@string/code32" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="code39"
+        android:title="@string/code39" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="code49"
+        android:title="@string/code49" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="code93"
+        android:title="@string/code93" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="data_matrix"
+        android:title="@string/data_matrix" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="ean13"
+        android:title="@string/ean13" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="ean8"
+        android:title="@string/ean8" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="grid_matrix"
+        android:title="@string/grid_matrix" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="gs1_databar"
+        android:title="@string/gs1_databar" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="hanxin_code"
+        android:title="@string/hanxin_code" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="hong_kong_2_of_5"
+        android:title="@string/hong_kong_2_of_5" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="iata_2_of_5"
+        android:title="@string/iata_2_of_5" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="interleaved_2_of_5"
+        android:title="@string/interleaved_2_of_5" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="matrix_2_of_5"
+        android:title="@string/matrix_2_of_5" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="maxi_code"
+        android:title="@string/maxi_code" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="micropdf417"
+        android:title="@string/micropdf417" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="microqr"
+        android:title="@string/microqr" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="msi_plessey"
+        android:title="@string/msi_plessey" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="nec_2_of_5"
+        android:title="@string/nec_2_of_5" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="pdf417"
+        android:title="@string/pdf417" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="pharmacode"
+        android:title="@string/pharmacode" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="plessey"
+        android:title="@string/plessey" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="qr_code"
+        android:title="@string/qr_code" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="straight_2_of_5"
+        android:title="@string/straight_2_of_5" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="telepen"
+        android:title="@string/telepen" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="trioptic"
+        android:title="@string/trioptic" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="upc-a"
+        android:title="@string/upc_a" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="upc-e"
+        android:title="@string/upc_e" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="australia_post"
+        android:title="@string/australia_post" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="canada_post"
+        android:title="@string/canada_post" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="dutch_post"
+        android:title="@string/dutch_post" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="japan_post"
+        android:title="@string/japan_post" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="korea_post"
+        android:title="@string/korea_post" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="royal_mail"
+        android:title="@string/royal_mail" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="usps_intelligent_mail"
+        android:title="@string/usps_intelligent_mail" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="usps_planet"
+        android:title="@string/usps_planet" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="usps_postnet"
+        android:title="@string/usps_postnet" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="upu"
+        android:title="@string/upu" />
+
+</PreferenceScreen>
