@@ -6,6 +6,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.view.View;
+import android.widget.Button;
 
 import jb.Preference;
 import permission.PermissionHelper;
@@ -14,6 +16,9 @@ import permission.PermissionInterface;
 public class MainActivity extends Activity implements PermissionInterface {
     private PermissionHelper permissionHelper;
     Context context;
+    Button btnActivate;
+    String OpenScan = "com.jbservice.action.OPEN_SCAN";
+
 
     @Override
     public int getPermissionsRequestCode() {
@@ -51,6 +56,7 @@ public class MainActivity extends Activity implements PermissionInterface {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        btnActivate= (Button) findViewById(R.id.btnActivate);
         permissionHelper = new PermissionHelper(this, this);
         permissionHelper.requestPermissions();
         context = this;
@@ -59,15 +65,15 @@ public class MainActivity extends Activity implements PermissionInterface {
             context.startService(service);
         }
 
-       /* Button btn = (Button) findViewById(R.id.button);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent();
-                intent.setClass(MainActivity.this, OemScanActivity.class);
-                startActivity(intent);
-            }
-        });*/
+btnActivate.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+
+        Intent i = new Intent(OpenScan);
+        sendBroadcast(i);
+        finish();
+    }
+});
     }
 
 

@@ -8,11 +8,11 @@
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnActivate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Scanning test and parameter setting"
+        android:text="Activate Scan Service and Exit!!"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
