@@ -68,11 +68,11 @@ public class MainActivity extends Activity implements PermissionInterface {
 btnActivate.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
-
         Intent i = new Intent(OpenScan);
         sendBroadcast(i);
-        finish();
-    }
+
+        finishAffinity();
+        }
 });
     }
 
